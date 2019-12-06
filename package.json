@@ -1,9 +1,14 @@
 {
-  "name": "michaelhankin.github.io",
-  "private": true,
-  "description": "Michael Hankin's personal website.",
-  "version": "0.1.0",
+  "name": "michaelhankin.com",
   "author": "Michael Hankin <mhankin@utexas.edu>",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "deploy": "yarn build && gh-pages --dist public --repo git@github.com:michaelhankin/michaelhankin.github.io.git --branch master",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "serve": "gatsby serve"
+  },
   "dependencies": {
     "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.34",
@@ -22,23 +27,11 @@
     "gh-pages": "^2.1.1",
     "prettier": "^1.19.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "clean": "gatsby clean",
-    "deploy": "yarn build && gh-pages --dist public --branch master",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "serve": "gatsby serve"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/michaelhankin/michaelhankin.github.io"
+    "url": "https://github.com/michaelhankin/michaelhankin.com"
   },
   "bugs": {
-    "url": "https://github.com/michaelhankin/michaelhankin.github.io/issues"
+    "url": "https://github.com/michaelhankin/michaelhankin.com/issues"
   }
 }
