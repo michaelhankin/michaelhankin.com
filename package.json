@@ -4,7 +4,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "deploy": "yarn build && gh-pages --dist public --repo git@github.com:michaelhankin/michaelhankin.github.io.git --branch master",
+    "deploy": "yarn build && gh-pages --dist public --repo https://github.com/michaelhankin/michaelhankin.github.io.git --branch master",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "serve": "gatsby serve"
