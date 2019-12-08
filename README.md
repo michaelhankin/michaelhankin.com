@@ -1,6 +1,6 @@
 # michaelhankin.com
 
-This repo contains the source code for michaelhankin.github.io.
+This repo contains the source code for [michaelhankin.github.io](https://michaelhankin.github.io).
 
 ## Local development
 
