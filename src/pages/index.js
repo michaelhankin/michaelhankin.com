@@ -5,13 +5,18 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <main>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <SEO title="Michael Hankin" />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+    <h1>Michael Hankin</h1>
+    <h2>Software Engineer</h2>
+    <ul>
+      <li>Email</li>
+      <li>Resume</li>
+      <li>GitHub</li>
+      <li>LinkedIn</li>
+    </ul>
   </main>
 )
 
