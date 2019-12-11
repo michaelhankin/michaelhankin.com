@@ -1,18 +1,35 @@
 import React from "react"
 
+import Avatar from "../components/avatar"
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+      <Avatar />
     </div>
+    <h1>Michael Hankin</h1>
+    <h2>Software Engineer</h2>
+    <p>
+      Full-stack software engineer on the scheduling team at{" "}
+      <a href="https://athenahealth.com/">athenahealth</a>. Studied computer
+      science at{" "}
+      <a href="https://utexas.edu/">The University of Texas at Austin</a>.
+    </p>
+    <ul>
+      <li>
+        <a href="mailto:mhankin@utexas.edu">Email</a>
+      </li>
+      <li>
+        <a href="/resume.pdf">Resume</a>
+      </li>
+      <li>
+        <a href="https://github.com/michaelhankin">GitHub</a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/michaelhankin">LinkedIn</a>
+      </li>
+    </ul>
   </Layout>
 )
 
