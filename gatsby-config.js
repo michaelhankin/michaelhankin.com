@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Michael Hankin`,
-    description: `The personal website of software engineer Michael Hankin.`,
+    description: `Full-stack software engineer on the scheduling team at athenahealth. Studied computer
+      science at The University of Texas at Austin.`,
     author: `@michaelhankin`,
   },
   plugins: [
