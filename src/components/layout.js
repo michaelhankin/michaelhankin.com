@@ -62,7 +62,7 @@ function Layout({ children }) {
           },
         ]}
       />
-      <main>{children}</main>
+      <main className="container is-fluid">{children}</main>
     </>
   )
 }
