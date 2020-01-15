@@ -2,9 +2,10 @@
 
 @import "~bulma/bulma.sass";
 
-.image.avatar {
+figure.image.avatar {
   height: 200px;
   width: 200px;
+  margin-bottom: 0.5rem;
 }
 
 main.container {
@@ -13,4 +14,22 @@ main.container {
   justify-content: center;
   overflow: hidden;
   padding: 32px;
+}
+
+div.column.is-narrow.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links > li {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+div.columns.is-centered.is-vcentered {
+  display: flex;
 }

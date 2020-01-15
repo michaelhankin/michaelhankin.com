@@ -8,13 +8,13 @@ import "./styles.scss"
 const IndexPage = () => (
   <Layout>
     <div class="columns is-centered is-vcentered">
-      <div class="column is-narrow">
+      <div class="column is-narrow main-content">
         <figure className="image avatar">
           <img className="is-rounded" src="/me.png" alt="Michael Hankin" />
         </figure>
         <h1 className="title">Michael Hankin</h1>
         <h2 className="subtitle">Software Engineer</h2>
-        <ul>
+        <ul className="links">
           <li>
             <a
               className="icon"
