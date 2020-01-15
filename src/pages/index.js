@@ -16,22 +16,42 @@ const IndexPage = () => (
         <h2 className="subtitle">Software Engineer</h2>
         <ul>
           <li>
-            <a className="icon" href="mailto:mhankin@utexas.edu">
+            <a
+              className="icon"
+              href="mailto:mhankin@utexas.edu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Mail />
             </a>
           </li>
           <li>
-            <a className="icon" href="/resume.pdf">
+            <a
+              className="icon"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FileText />
             </a>
           </li>
           <li>
-            <a className="icon" href="https://github.com/michaelhankin">
+            <a
+              className="icon"
+              href="https://github.com/michaelhankin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GitHub />
             </a>
           </li>
           <li>
-            <a className="icon" href="https://linkedin.com/in/michaelhankin">
+            <a
+              className="icon"
+              href="https://linkedin.com/in/michaelhankin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Linkedin />
             </a>
           </li>
