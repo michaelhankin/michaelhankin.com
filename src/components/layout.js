@@ -41,6 +41,10 @@ function Layout({ children }) {
             content: description,
           },
           {
+            property: `og:image`,
+            content: `https://michaelhankin.com/og-image.png`,
+          },
+          {
             property: `og:type`,
             content: `website`,
           },
