@@ -13,4 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
       - run: yarn install
       - run: yarn build
+      - run: |
+          git config --local user.email "mhankin@utexas.edu"
+          git config --local user.name "Michael Hankin"
       - run: yarn deploy
