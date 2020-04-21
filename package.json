@@ -1,6 +1,7 @@
 {
   "name": "michaelhankin.com",
-  "author": "Michael Hankin <mhankin@utexas.edu>",
+  "author": "Michael Hankin <me@michaelhankin.com>",
+  "license": "UNLICENSED",
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
