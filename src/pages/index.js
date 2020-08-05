@@ -18,7 +18,7 @@ const IndexPage = () => (
           <li>
             <a
               className="icon"
-              href="mailto:mhankin@utexas.edu"
+              href="mailto:me@michaelhankin.com"
               target="_blank"
               rel="noopener noreferrer"
             >
