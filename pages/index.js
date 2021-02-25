@@ -1,65 +1,61 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Layout from "../components/layout";
+
+function Link({ href, children }) {
+  return (
+    <a
+      href={href}
+      className="bg-yellow-100 hover:bg-yellow-200 hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
+  );
+}
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <Layout title="Michael Hankin">
+      <main>
+        <h1 className="text-2xl font-black mb-4">Hi, I'm Michael 👋</h1>
+        <div className="space-y-6 text-lg leading-normal">
+          <p>
+            I'm a full-stack software engineer at{" "}
+            <Link href="https://www.bloomberg.com/company/">
+              Bloomberg L.P.
+            </Link>{" "}
+            Prior to that I worked at{" "}
+            <Link href="https://www.athenahealth.com/">athenahealth</Link>, and
+            before that, I got a B.S. in Computer Science at{" "}
+            <Link href="https://www.utexas.edu/">UT Austin</Link>.
+          </p>
+          <p>
+            In my free time, I partake in a bunch of different hobbies including
+            cooking, biking, and watching movies. Cooking is the one that I
+            spend most of my time on recently.
+          </p>
+          <p>
+            If you'd like to get in touch with me/see what I've worked on, check
+            out these links:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>
+              <Link href="mailto:me@michaelhankin.com">Email</Link>
+            </li>
+            <li>
+              <Link href="https://github.com/michaelhankin">GitHub</Link>
+            </li>
+            <li>
+              <Link href="https://www.linkedin.com/in/michaelhankin/">
+                LinkedIn
+              </Link>
+            </li>
+            <li>
+              <Link href="/Michael_Hankin_Resume.pdf">Resume</Link>
+            </li>
+          </ul>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+    </Layout>
+  );
 }
