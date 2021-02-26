@@ -4,8 +4,6 @@
   "scripts": {
     "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
-    "deploy": "gh-pages --dist .next --repo https://github.com/michaelhankin/michaelhankin.github.io.git --branch master",
-    "predeploy": "npm run build",
     "start": "next start"
   },
   "dependencies": {
@@ -19,8 +17,5 @@
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
     "tailwindcss": "2.0.2"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.1.0"
   }
 }
