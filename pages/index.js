@@ -31,8 +31,8 @@ export default function Home() {
           </p>
           <p>
             In my free time, I partake in a bunch of different hobbies including
-            cooking, biking, and watching movies. Cooking is the one that I
-            spend most of my time on recently.
+            cooking, playing guitar, and watching movies. Cooking is the one
+            that I spend most of my time on recently.
           </p>
           <p>
             If you'd like to get in touch with me/see what I've worked on, check
