@@ -35,7 +35,7 @@ export default function Layout({ children, title }) {
         </nav>
       </header>
 
-      <div className="mt-12 px-6 md:px-16 lg:px-24 pb-8 lg:pl-52">
+      <div className="mt-12 px-6 md:px-16 lg:px-24 pb-8 lg:pb-16 lg:pl-52">
         <div className="max-w-prose">{children}</div>
       </div>
     </div>

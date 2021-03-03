@@ -1,17 +1,5 @@
 import Layout from "../components/layout";
-
-function Link({ href, children }) {
-  return (
-    <a
-      href={href}
-      className="bg-yellow-100 hover:bg-yellow-200 hover:underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {children}
-    </a>
-  );
-}
+import Link from "../components/link";
 
 export default function Home() {
   return (
@@ -31,14 +19,15 @@ export default function Home() {
           </p>
           <p>
             In my free time, I partake in a bunch of different hobbies including
-            cooking, playing guitar, and watching movies. Cooking is the one
-            that I spend most of my time on recently.
+            cooking, playing guitar, and{" "}
+            <Link href="/movies">watching movies</Link>. Cooking is the one that
+            I spend most of my time on recently.
           </p>
           <p>
             If you'd like to get in touch with me/see what I've worked on, check
             out these links:
           </p>
-          <ul className="list-disc list-inside">
+          <ul>
             <li>
               <Link href="mailto:me@michaelhankin.com">Email</Link>
             </li>
