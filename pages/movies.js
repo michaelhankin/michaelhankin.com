@@ -20,12 +20,16 @@ export default function Movies({ movies }) {
             some of my thoughts on it.
           </p>
           <div>
-            <h2 className="font-bold mb-3 text-xl">Up Next</h2>
-            {upNext.length ? (
-              <ul>
-                {upNext.map(({ title, imdbLink }) => (
+            <h2 className="font-bold mb-3 text-xl">Watched</h2>
+            {watched.length ? (
+              <ul className="space-y-2">
+                {watched.map(({ title, imdbLink, comments }) => (
                   <li key={title}>
                     <Link href={imdbLink}>{title}</Link>
+                    <details className="ml-6 mt-2">
+                      <summary>Comments</summary>
+                      <p className="ml-4 mt-2">{comments}</p>
+                    </details>
                   </li>
                 ))}
               </ul>
@@ -34,16 +38,12 @@ export default function Movies({ movies }) {
             )}
           </div>
           <div>
-            <h2 className="font-bold mb-3 text-xl">Watched</h2>
-            {watched.length ? (
-              <ul>
-                {watched.map(({ title, imdbLink, comments }) => (
+            <h2 className="font-bold mb-3 text-xl">Up Next</h2>
+            {upNext.length ? (
+              <ul className="space-y-2">
+                {upNext.map(({ title, imdbLink }) => (
                   <li key={title}>
                     <Link href={imdbLink}>{title}</Link>
-                    <details className="ml-6">
-                      <summary>Comments</summary>
-                      <p>{comments}</p>
-                    </details>
                   </li>
                 ))}
               </ul>
